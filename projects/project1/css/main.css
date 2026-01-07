@@ -1,0 +1,313 @@
+@font-face {
+  font-family: "Nav";
+  src: url(../fonts/2/12.ttf);
+}
+@font-face {
+  font-family: "Nav2";
+  src: url(../fonts/3/3.otf);
+}
+@font-face {
+  font-family: "Text";
+  src: url(../fonts/4/4.ttf);
+}
+#img4, #img3, #img2, #img1 {
+  background-size: cover;
+  border: 1px solid black;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 0.5px;
+  color: #e6e4e3;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+#img4:hover, #img3:hover, #img2:hover, #img1:hover {
+  border: 1px solid #f7c4aa;
+  box-shadow: 6px 6px 6px rgb(95, 95, 95), -5px -5px 5px rgb(167, 167, 167);
+}
+
+.pricing {
+  background-color: rgba(202, 189, 49, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #e6e4e3;
+  font-family: "Text";
+}
+.pricing div h4 {
+  font-size: 1.5rem;
+}
+.pricing div h2 {
+  font-size: 1.3rem;
+}
+.pricing div ul li {
+  font-size: 0.9rem;
+}
+.pricing div:first-child {
+  background-color: #595421;
+}
+.pricing a {
+  font-size: 1.3em;
+  background-color: #595421;
+  color: #e6e4e3;
+}
+.pricing a:hover {
+  background-color: #e6e4e3;
+  color: black;
+}
+
+#navbar2 a {
+  font-size: 1rem;
+  font-family: "Nav2";
+  text-decoration: none;
+  color: #e6e4e3;
+  background-color: rgba(86, 85, 92, 0.7);
+  padding: 1%;
+  border-radius: 50%;
+  border: 1px solid rgba(230, 228, 227, 0.5);
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+#navbar2 a:hover {
+  font-size: 1.1rem;
+  color: #ffffff;
+  border-radius: 35%;
+  border: 1px solid black;
+}
+
+body {
+  background-color: rgba(49, 49, 49, 0.5);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(86, 85, 92, 0.4);
+  width: 100%;
+  border-bottom: 2px solid rgba(86, 85, 92, 0.5);
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header #logo {
+  height: 3rem;
+  margin-left: 25%;
+}
+header #navbar li a {
+  color: #e6e4e3;
+  font-size: 1.5rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+header #navbar li a:hover {
+  text-decoration: overline;
+  text-decoration-color: #595421;
+  color: #f7c4aa;
+}
+
+#navbar2 {
+  position: relative;
+  text-align: center;
+}
+#navbar2 h1 {
+  font-family: "Nav2";
+  color: #e6e4e3;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 6vw;
+}
+#navbar2 p {
+  font-size: 2vw;
+  font-family: "Nav2";
+  color: #e6e4e3;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
+  font-weight: 400;
+}
+#navbar2 .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#background-img {
+  border-bottom: 3px solid rgb(86, 85, 92);
+}
+
+#logo1 {
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(86, 85, 92, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid #595421;
+  border-radius: 15px;
+}
+
+#img1 {
+  background-image: url("../imgs/Aventura.jpg");
+}
+
+#img2 {
+  background-image: url("../imgs/Distractie.jpg");
+}
+
+#img3 {
+  background-image: url("../imgs/Natura.jpg");
+}
+
+#img4 {
+  background-image: url("../imgs/Adrenalina.jpg");
+}
+
+#about2 h2 {
+  font-size: 5rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 1px;
+  color: #e6e4e3;
+}
+#about2 div ul {
+  color: #e6e4e3;
+  font-size: 1.2rem;
+  font-family: "Text";
+  list-style-type: none;
+}
+
+#about3 {
+  color: #e6e4e3;
+  font-size: 1.2rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 0.5px;
+}
+#about3 h2 {
+  color: #cabd31;
+  font-size: 2.3rem;
+}
+
+#pricing3 {
+  background-color: rgba(47, 47, 49, 0.5);
+}
+
+#pricing2 h2 {
+  font-size: 5rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 1px;
+  color: #e6e4e3;
+}
+#pricing2 p {
+  color: #e6e4e3;
+  font-size: 1.2rem;
+  font-family: "Text";
+  padding-top: 15px;
+}
+
+#contact3 {
+  background-color: rgba(47, 47, 49, 0.5);
+}
+
+#galery1 h2 {
+  font-size: 5rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 1px;
+  color: #e6e4e3;
+}
+#galery1 p {
+  color: #e6e4e3;
+  font-size: 1.2rem;
+  font-family: "Text";
+}
+
+#contact2 h2 {
+  font-size: 5rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 1px;
+  color: #e6e4e3;
+}
+#contact2 p {
+  color: #e6e4e3;
+  font-size: 1.2rem;
+  font-family: "Text";
+}
+#contact2 i {
+  font-size: 3rem;
+}
+#contact2 h4 {
+  font-size: 1.7rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 0.5px;
+  color: #cabd31;
+}
+
+#formular {
+  background-color: rgba(202, 189, 49, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid #595421;
+}
+
+#formular2 p {
+  font-family: "Text";
+  font-size: 1rem;
+}
+
+#buton {
+  font-family: "Text";
+  background-color: #595421;
+  color: #e6e4e3;
+  border-radius: 25px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#buton:hover {
+  background-color: #202020;
+  color: black;
+}
+
+#footer {
+  background-image: url(../imgs/Footer.png);
+  background-size: cover;
+  border-top: 1px solid black;
+  color: #e6e4e3;
+}
+#footer #footer2 div:first-child {
+  padding-top: 2vh;
+}
+#footer #footer2 div h3 {
+  font-size: 3rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  color: #e6e4e3;
+}
+#footer #footer2 #footer3 {
+  font-size: 1.2rem;
+  font-family: "Text";
+}
+#footer #footer2 div p {
+  font-size: 1.2rem;
+  padding-bottom: 1vh;
+}
+#footer #footer2 div a {
+  color: #e6e4e3;
+}
+#footer #footer2 div a i {
+  font-size: 3rem;
+}
+#footer #footer2 div a:hover {
+  color: #cabd31;
+}
+
+@media only screen and (max-width: 991px) {
+  #logo {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

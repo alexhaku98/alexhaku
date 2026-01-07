@@ -1,0 +1,364 @@
+@font-face {
+  font-family: "Nav";
+  src: url(../fonts/2/12.ttf);
+}
+
+@font-face {
+  font-family: "Nav2";
+  src: url(../fonts/3/3.otf);
+}
+
+@font-face {
+  font-family: "Text";
+  src: url(../fonts/4/4.ttf);
+}
+
+%card-style {
+  background-size: cover;
+  border: 1px solid black;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 0.5px;
+  color: #e6e4e3;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+
+  &:hover {
+    border: 1px solid #f7c4aa;
+    box-shadow: 6px 6px 6px rgb(95, 95, 95), -5px -5px 5px rgb(167, 167, 167);
+  }
+}
+
+%pricing-card {
+  background-color: rgb(202, 189, 49, 0.2);
+  backdrop-filter: blur(10px);
+  color: #e6e4e3;
+  font-family: "Text";
+
+  div h4 {
+    font-size: 1.5rem;
+  }
+
+  div h2 {
+    font-size: 1.3rem;
+  }
+
+  div ul li {
+    font-size: 0.9rem;
+  }
+
+  div:first-child {
+    background-color: #595421;
+  }
+
+  a {
+    font-size: 1.3em;
+    background-color: #595421;
+    color: #e6e4e3;
+
+    &:hover {
+      background-color: #e6e4e3;
+      color: black;
+    }
+  }
+}
+
+%button-style {
+  font-size: 1rem;
+  font-family: "Nav2";
+  text-decoration: none;
+  color: #e6e4e3;
+  background-color: rgb(86, 85, 92, 0.7);
+  padding: 1%;
+  border-radius: 50%;
+  border: 1px solid rgb(230, 228, 227, 0.5);
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+
+  &:hover {
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 35%;
+    border: 1px solid black;
+  }
+}
+
+body {
+  background-color: rgba(49, 49, 49, 0.5);
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(86, 85, 92, 0.4);
+  width: 100%;
+  border-bottom: 2px solid rgb(86, 85, 92, 0.5);
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  backdrop-filter: blur(10px);
+
+  #logo {
+    height: 3rem;
+    margin-left: 25%;
+  }
+
+  #navbar li a {
+    color: #e6e4e3;
+    font-size: 1.5rem;
+    font-family: "Nav2";
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+
+    &:hover {
+      text-decoration: overline;
+      text-decoration-color: #595421;
+      color: #f7c4aa;
+    }
+  }
+}
+
+#navbar2 {
+  position: relative;
+  text-align: center;
+
+  h1 {
+    font-family: "Nav2";
+    color: #e6e4e3;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 2vw;
+    font-family: "Nav2";
+    color: #e6e4e3;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+    font-weight: 400;
+  }
+
+  a {
+    @extend %button-style;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#background-img {
+  border-bottom: 3px solid rgb(86, 85, 92);
+}
+
+#logo1 {
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(86, 85, 92, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid #595421;
+  border-radius: 15px;
+}
+
+#img1 {
+  background-image: url("../imgs/Aventura.jpg");
+  @extend %card-style;
+}
+
+#img2 {
+  background-image: url("../imgs/Distractie.jpg");
+  @extend %card-style;
+}
+
+#img3 {
+  background-image: url("../imgs/Natura.jpg");
+  @extend %card-style;
+}
+
+#img4 {
+  background-image: url("../imgs/Adrenalina.jpg");
+  @extend %card-style;
+}
+
+#about2 {
+  h2 {
+    font-size: 5rem;
+    font-family: "Nav2";
+    -webkit-text-stroke-color: #595421;
+    -webkit-text-stroke-width: 1px;
+    color: #e6e4e3;
+  }
+
+  div ul {
+    color: #e6e4e3;
+    font-size: 1.2rem;
+    font-family: "Text";
+    list-style-type: none;
+  }
+}
+
+#about3 {
+  color: #e6e4e3;
+  font-size: 1.2rem;
+  font-family: "Nav2";
+  -webkit-text-stroke-color: #595421;
+  -webkit-text-stroke-width: 0.5px;
+
+  h2 {
+    color: #cabd31;
+    font-size: 2.3rem;
+  }
+}
+
+#pricing3 {
+  background-color: rgba(47, 47, 49, 0.5);
+}
+
+#pricing2 {
+  h2 {
+    font-size: 5rem;
+    font-family: "Nav2";
+    -webkit-text-stroke-color: #595421;
+    -webkit-text-stroke-width: 1px;
+    color: #e6e4e3;
+  }
+
+  p {
+    color: #e6e4e3;
+    font-size: 1.2rem;
+    font-family: "Text";
+    padding-top: 15px;
+  }
+}
+
+#contact3 {
+  background-color: rgba(47, 47, 49, 0.5);
+}
+
+.pricing {
+  @extend %pricing-card;
+}
+
+#galery1 {
+  h2 {
+    font-size: 5rem;
+    font-family: "Nav2";
+    -webkit-text-stroke-color: #595421;
+    -webkit-text-stroke-width: 1px;
+    color: #e6e4e3;
+  }
+
+  p {
+    color: #e6e4e3;
+    font-size: 1.2rem;
+    font-family: "Text";
+  }
+}
+
+#contact2 {
+  h2 {
+    font-size: 5rem;
+    font-family: "Nav2";
+    -webkit-text-stroke-color: #595421;
+    -webkit-text-stroke-width: 1px;
+    color: #e6e4e3;
+  }
+
+  p {
+    color: #e6e4e3;
+    font-size: 1.2rem;
+    font-family: "Text";
+  }
+
+  i {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    font-family: "Nav2";
+    -webkit-text-stroke-color: #595421;
+    -webkit-text-stroke-width: 0.5px;
+    color: #cabd31;
+  }
+}
+
+#formular {
+  background-color: rgb(202, 189, 49, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid #595421;
+}
+
+#formular2 {
+  p {
+    font-family: "Text";
+    font-size: 1rem;
+  }
+}
+#buton {
+  font-family: "Text";
+  background-color: #595421;
+  color: #e6e4e3;
+  border-radius: 25px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    background-color: #202020;
+    color: black;
+  }
+}
+
+#footer {
+  background-image: url(../imgs/Footer.png);
+  background-size: cover;
+  border-top: 1px solid black;
+  color: #e6e4e3;
+
+  #footer2 {
+    div:first-child {
+      padding-top: 2vh;
+    }
+
+    div h3 {
+      font-size: 3rem;
+      font-family: "Nav2";
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 1px;
+      color: #e6e4e3;
+    }
+
+    #footer3 {
+      font-size: 1.2rem;
+      font-family: "Text";
+    }
+
+    div p {
+      font-size: 1.2rem;
+      padding-bottom: 1vh;
+    }
+
+    div a {
+      color: #e6e4e3;
+
+      i {
+        font-size: 3rem;
+      }
+
+      &:hover {
+        color: #cabd31;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #logo {
+    display: none;
+  }
+}
