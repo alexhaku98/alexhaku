@@ -61,14 +61,14 @@ hr {
   background-color: #ffffff;
 }
 
-#challanges {
+#challenges {
   background-color: #0B0C10;
   text-decoration: none;
   border: 1px solid white;
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
-#challanges:hover {
+#challenges:hover {
   scale: 1.1;
   background-color: white;
   color: #0B0C10;
