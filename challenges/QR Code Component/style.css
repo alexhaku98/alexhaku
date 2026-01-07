@@ -41,19 +41,20 @@ img {
   }
 
   #card #p1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
-    margin: 15px 25px 10px 25px;
+    margin: 5px 20px 10px 20px;
   }
 
   #card #p2 {
     font-size: 1rem;
     font-weight: 300;
     color:hsl(216, 15%, 48%);
-    margin: 10px 25px 35px 25px;
+    margin: 10px 20px 35px 20px;
 
   }
+
 
 
 
