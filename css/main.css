@@ -61,6 +61,20 @@ hr {
   background-color: #ffffff;
 }
 
+#challanges {
+  background-color: #0B0C10;
+  text-decoration: none;
+  border: 1px solid white;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+#challanges:hover {
+  scale: 1.1;
+  background-color: white;
+  color: #0B0C10;
+}
+
+
 .title {
   color: rgb(1, 78, 167);
 }
