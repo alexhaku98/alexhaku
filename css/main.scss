@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "TNR";
+    src: url(../fonts/1/1);
+}
+
+html {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "TNR";
+    background-image: url(../imgs/bg2.jpg);
+    background-size: cover;
+}
+
+hr {
+    border-color: #45A29E;
+}
+
+#icons {
+    a {
+        text-decoration: none;
+
+        i {
+            color: #66FCF1;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                padding: 3px;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+#card-style {
+    transition-delay: 0.1s;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+#button-style {
+    background-color: #0B0C10;
+    text-decoration: none;
+    border: 1px solid white;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+        background-color: white;
+        color: #0B0C10;
+    }
+
+}
+
+#nav {
+    color: #ffffff;
+    background-color: #002147;
+}
+
+#content {
+    color: #1A1A1A;
+    background-color: #ffffff;
+}
+
+.title {
+    color: rgb(1, 78, 167);
+}
+
+.custom-list {
+    list-style-image: url("/imgs/diamond-solid-full.svg");
+}
