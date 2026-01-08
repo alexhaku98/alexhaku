@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: start;
+  background-color: hsl(0, 0%, 100%);
+  width: min-content;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 10px;
+  transition: all 0.5s ease-out;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#card-image {
+  width: 345px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#card-info {
+  margin: 5px 20px 25px 20px;
+}
+
+#card-status {
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  width: min-content;
+  margin-bottom: 15px;
+}
+
+#card-date {
+  font-weight: 500;
+  color: hsl(0, 0%, 7%);
+  font-size: 15px;
+}
+
+#card-title {
+  font-size: x-large;
+  font-weight: 800;
+  margin: 15px 0px 15px 0px;
+  transition: all 0.5s ease-out;
+}
+
+#card-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color:hsl(0, 0%, 42%);
+}
+
+#card-profile {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  margin: 20px 0px 0px 0px;
+  align-items: center;
+}
+
+#profile-image {
+  width: 30px;
+}
+
+#profile-name {
+  font-weight: 800;
+  margin-left: 12px;
+  font-size:15px;
+}
+
+.card:hover {
+  box-shadow: 15px 15px;
+}
+
+.card:hover #card-title {
+  color: hsl(47, 88%, 63%);
+}
+
+#card-title:hover {
+  cursor: pointer;
+}
+/* ## Colors
+
+- Yellow: hsl(47, 88%, 63%)
+
+- White: hsl(0, 0%, 100%)
+
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800 */
