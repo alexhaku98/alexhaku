@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Inter;
-  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 body {
@@ -117,4 +117,5 @@ img:hover {
 ### Font
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
+
 - Weights: 400, 600, 700 */
