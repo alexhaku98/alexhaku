@@ -79,13 +79,8 @@ img {
 }
 
 .links a:hover {
-  box-shadow: 2px 2px;
-  background-color: hsl(0, 0%, 25%);
-}
-
-img:hover {
-  scale: 1.1;
-  border: 1px solid hsl(0, 0%, 100%);
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
 }
 
 .attribution {
@@ -119,3 +114,4 @@ img:hover {
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 
 - Weights: 400, 600, 700 */
+
