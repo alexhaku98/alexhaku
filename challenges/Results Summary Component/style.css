@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: HankenGrotesk;
-  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
 body {
@@ -244,4 +244,5 @@ Use transparency to get the color variations necessary to match the design. Hint
 ### Font
 
 - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+
 - Weights: 500, 700, 800*/
