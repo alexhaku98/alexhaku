@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url(fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Fraunces;
+}
+
+.main-card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  height: 28.1rem;
+}
+
+.first-section #web-image {
+  width: 18.75rem;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.first-section #mobile-image {
+  display:none;
+  width: 18.75rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.second-section {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 33px 33px 35px 33px;
+  width: 14.5rem;
+}
+
+.second-section h2 {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  letter-spacing: 0.3rem;
+  margin-bottom: 21px;
+}
+
+.second-section h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 24px;
+}
+
+.card-info {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  font-family: Montserrat;
+  line-height: 1.45rem;
+  font-weight: 500;
+}
+
+.card-price {
+  display: inline-flex;
+  justify-content: start;
+  align-content: center;
+  margin: 25px 0px 25px 0px;
+}
+
+.card-price p:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.card-price p:last-child {
+  font-size: 0.9rem;
+  color: hsl(228, 12%, 48%);
+  margin: auto;
+}
+
+.card-btn {
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+.card-btn a img {
+  margin-right: 0.7rem;
+  vertical-align: middle;
+}
+
+.card-btn a {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+
+.card-btn:hover {
+  background-color: hsl(158, 42%, 18%);
+  cursor:pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width:40.625rem ) {
+  .main-card {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: max-content;
+  }
+
+  .first-section #web-image {
+    display: none;
+  }
+
+  .first-section #mobile-image {
+    display: inline;
+    width: 21.8rem;
+  }
+
+  .second-section {
+    width: 17.6rem;
+    margin: 25px 33px 35px 33px;
+  }
+}
+
+
+/* ## Colors
+
+### Primary
+
+- Green 500: hsl(158, 36%, 37%)
+- Green 700: hsl(158, 42%, 18%)
+
+### Neutral
+
+- Black: hsl(212, 21%, 14%)
+- Grey: hsl(228, 12%, 48%)
+- Cream: hsl(30, 38%, 92%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
