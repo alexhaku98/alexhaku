@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+  height: 100vh;
+  font-family: Outfit;
+}
+
+hr {
+  background-color: hsl(215, 32%, 27%);
+  height: 0.1rem;
+  margin: 1.5rem 0rem 1rem 0rem;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: hsl(216, 50%, 16%);
+  width: 22rem;
+  border-radius: 0.9rem;
+}
+
+.card-image {
+  margin: 1.5rem;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+.card-image div:first-child img {
+  border-radius: 0.7rem;
+  position:relative;
+  top:0;
+  left:0;
+  width: 19rem;
+  opacity: 1;
+}
+
+.card-image div:last-child img{
+  background-color: hsla(178, 100%, 50%,0.6);
+  border-radius: 0.7rem;
+  padding: 8rem;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+}
+
+.card-info {
+  margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.card-info h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card-paragraph {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin: 1rem 0rem 1.3rem 0rem;
+  line-height: 1.7rem;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.card-price div:first-child,
+.card-price div:last-child {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.card-price div:last-child {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.card-price div:last-child img {
+  margin-right: 0.4rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.card-price div:first-child img {
+  margin-right: 0.4rem;
+  width: 0.7rem;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0 2rem 0;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.card-profile img {
+  width: 1.9rem;
+  border: 0.1rem solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.card-profile p a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-image:hover img:last-child {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card-info h1:hover {
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(140, 100%, 78%);
+}
+
+.card-profile p a:hover {
+  color:hsl(178, 100%, 50%);
+}
+
+/* ## Colors
+
+### Primary
+
+- Blue 500: hsl(215, 51%, 70%)
+- Cyan 400: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Blue 950 (main BG): hsl(217, 54%, 11%)
+- Blue 900 (card BG): hsl(216, 50%, 16%)
+- Blue 800 (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
