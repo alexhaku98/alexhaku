@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  display: flex;
+  font-family: "RedHatDisplay", sans-serif;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  width: 28.2rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1.3rem;
+}
+
+.main-card img:first-child {
+  width: 28.2rem;
+  border-radius: 1.3rem 1.3rem 0rem 0rem;
+}
+
+.card-info {
+  text-align: center;
+  padding: 0rem 3.7rem 0rem 3.7rem;
+  margin: 2.9rem 0rem 2rem 0rem;
+}
+
+.card-info h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.card-info p {
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.65rem;
+  margin: 1rem 0rem 1.2rem 0rem;
+}
+
+.card-info2 {
+  display: flex;
+  background-color: hsla(225, 100%, 94%, 0.5);
+  height: 6.3rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.7rem;
+}
+
+.card-subs {
+  display: flex;
+  align-items: center;
+}
+
+.card-subs img:first-child {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin: 0rem 1.1rem;
+}
+
+.card-subs div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-subs div h2 {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-subs div p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.05rem;
+  margin: auto;
+  color: hsl(224, 23%, 55%);
+  align-items: end;
+}
+
+.card-info2 a {
+  font-size: 0.9rem;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  margin: 0rem 1.1rem;
+}
+
+.card-info2 a:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.7);
+}
+
+.card-btn {
+  display: flex;
+  flex-direction: column;
+  margin: 1.85rem 0rem 1rem 0rem;
+}
+
+.card-btn a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.card-btn a:first-child {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 0.95rem;
+  border-radius: 0.6rem;
+}
+
+.card-btn a:first-child:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.card-btn a:last-child {
+  color: hsl(224, 23%, 55%);
+  margin-top: 2rem;
+}
+
+.card-btn a:last-child:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(245, 75%, 52%);
+}
+
+@media only screen and (max-width: 28.438rem) {
+  .main-card {
+    width: 24.5rem;
+  }
+
+  .main-card img:first-child {
+    width: 24.5rem;
+  }
+
+  .card-subs div h2 {
+    font-size: 0.95rem;
+  }
+
+  .card-subs div p {
+    font-size: 0.95rem;
+  }
+
+  .card-info2 a {
+    font-size: 0.8rem;
+  }
+  .card-subs img:first-child {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+  }
+}
+
+/* ## Colors
+
+### Primary
+
+- Blue 100: hsl(225, 100%, 94%)
+- Blue 700: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Blue 50: hsl(225, 100%, 98%)
+- Gray 600: hsl(224, 23%, 55%)
+- Blue 950: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
