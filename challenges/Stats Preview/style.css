@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  font-family: "Lexend Deca";
+}
+
+.main-card {
+  display: flex;
+  margin: auto;
+  background-color: hsl(244, 37%, 16%);
+  border-radius: 0.5rem;
+  height: 27.8rem;
+  width: 69.4rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 4.5rem 4.6rem 0rem 4.5rem;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  font-family: "Inter";
+  margin-bottom: 1.67rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-title b {
+  font-weight: 700;
+  color: hsl(277, 64%, 61%);
+}
+
+.card-paragraph {
+  line-height: 1.56rem;
+  font-size: 0.938rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0rem 4rem 4.4rem 0rem;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.8rem;
+  font-family: "Inter";
+  margin-right: 5rem;
+}
+
+.card-stats div h2 {
+  font-weight: 700;
+}
+
+.card-stats div p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img div {
+  height: 27.8rem;
+  width: 33.658rem;
+  background-color: hsl(277, 64%, 61%);
+  z-index: 0;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+#desktop-img {
+  position: absolute;
+  height: 27.8rem;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  z-index: 1;
+  opacity: 0.8;
+  filter: grayscale(100%) contrast(1.12) brightness(0.92);
+  mix-blend-mode: multiply;
+}
+
+#mobile-img {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  filter: grayscale(100%) contrast(1.12) brightness(0.92);
+  mix-blend-mode: multiply;
+  width: 20.5rem;
+  top: 0;
+  left: 0;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(277, 64%, 61%);
+}
+
+@media only screen and (max-width: 71rem) {
+  .main-card {
+    flex-direction: column-reverse;
+    width: 20.5rem;
+    text-align: center;
+    height: fit-content;
+  }
+
+  .card-info {
+    margin: 2.2rem 1.8rem 0rem 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.7rem;
+    margin: 0rem 0rem 1rem 0rem;
+    line-height: 2rem;
+  }
+
+  .card-paragraph {
+    margin: 0rem 0rem 3rem 0rem;
+  }
+
+  .card-img div {
+    width: 20.5rem;
+    height: 15.044rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+  }
+
+  #desktop-img {
+    opacity: 0;
+    display: none;
+  }
+
+  #mobile-img {
+    opacity: 0.8;
+  }
+
+  .card-stats {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  .card-stats div {
+    margin-bottom: 1.5rem;
+  }
+}
+/* ## Colors
+
+### Primary
+
+- Navy 950 (main background): hsl(233, 47%, 7%)
+- Blue 950 (card background): hsl(244, 37%, 16%)
+- Purple 500 (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- White (main paragraph): hsla(0, 0%, 100%, 0.75)
+- White (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400 */
