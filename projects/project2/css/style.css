@@ -281,26 +281,25 @@ nav div a:hover {
   cursor: default;
 }
 
-.bg-1 div p {
+.about div p {
   color: var(--second-color);
   font-size: 1.3rem;
   font-family: "Fraunces";
   font-weight: 500;
 }
 
-.bg-1 div div h3 {
+.about div div h3 {
   color: var(--fourth-color);
   font-family: "Archivo Black";
   -webkit-text-stroke: 0.05rem var(--second-color);
   font-size: 2.2rem;
 }
 
-.bg-1 div div ul li {
+.about div div ul li {
   color: var(--second-color);
   font-family: "Fraunces";
   font-size: 1.2rem;
   text-align: center;
-  list-style: none;
   font-weight: 500;
 }
 
@@ -1002,8 +1001,12 @@ nav div a:hover {
     align-items: center;
   }
 
+  .navbar a {
+    font-size: 1.4rem;
+  }
+
   .header-content h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   .custom-sidebar {
@@ -1015,6 +1018,25 @@ nav div a:hover {
     position: absolute;
     left: 1rem;
     top: 0;
+  }
+
+  .about div p {
+    font-size: 1.1rem;
+  }
+
+  .about div div h3 {
+    font-size: 1.5rem;
+  }
+
+  .about div div ul li {
+    font-size: 1rem;
+  }
+
+  .custom-title {
+  font-size: 2.5rem;
+}
+  .header-content a {
+    font-size:1.2rem;
   }
 }
 
@@ -1050,10 +1072,13 @@ nav div a:hover {
     display: none;
   }
   .footer-info h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .footer-links div:last-child a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .footer-cover div:first-child h2 {
+    font-size: 4rem;
   }
 }
 
@@ -1065,16 +1090,10 @@ nav div a:hover {
   .carousel .list .item .content .title {
     font-size: 30px;
   }
-  .bg-1,
-  .bg-2,
-  .footer-bg,
-  header {
-    padding: 1rem;
-  }
+  
   .footer-copyrights {
-  color: var(--fourth-color);
-  font-size: 1.2rem;
-}
+    font-size: 1rem;
+  }
 }
 
 @media (min-aspect-ratio: 16/9) {
