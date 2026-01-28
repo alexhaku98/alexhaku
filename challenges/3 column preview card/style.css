@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Big Shoulders";
+  src: url(fonts/BigShoulders-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+:root {
+  --gold: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --green: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --gray-100: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--gray-100);
+}
+
+.sedans {
+  background-color: var(--gold);
+}
+
+.sedans button {
+  color: var(--gold);
+}
+
+.sedans button:hover {
+  background-color: var(--gold);
+}
+
+.suvs {
+  background-color: var(--cyan);
+}
+
+.suvs button {
+  color: var(--cyan);
+}
+
+.suvs button:hover {
+  background-color: var(--cyan);
+}
+
+.luxury {
+  background-color: var(--green);
+}
+
+.luxury button {
+  color: var(--green);
+}
+
+.luxury button:hover {
+  background-color: var(--green);
+}
+
+.sedans,
+.suvs,
+.luxury {
+  width: 19.15rem;
+  height: 31.25rem;
+}
+
+.sedans h2,
+.suvs h2,
+.luxury h2 {
+  font-size: 2.4rem;
+  font-family: "Big Shoulders";
+  text-transform: uppercase;
+  color: var(--gray-100);
+  font-weight: 500;
+  margin-top: 2.2rem;
+}
+
+.sedans p,
+.suvs p,
+.luxury p {
+  font-size: 0.938rem;
+  color: var(--transparent-white);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  margin-top: 1.78rem;
+  line-height: 1.56rem;
+}
+
+.sedans button,
+.suvs button,
+.luxury button {
+  font-size: 0.9rem;
+  background-color: var(--gray-100);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  margin-top: 4.1rem;
+  padding: 0.65rem 1.8rem;
+  border-radius: 4rem;
+  border: 0.2rem solid var(--gray-100);
+  transition:
+    cursor 0.5s ease-in-out,
+    color 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
+}
+
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
+  cursor: pointer;
+  color: var(--transparent-white);
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--cyan);
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: var(--gold);
+}
+
+@media only screen and (max-width: 931px) {
+  .custom-card {
+    flex-direction: column;
+  }
+}
+
+/* 
+## Colors
+
+### Primary
+
+Gold 500: hsl(31, 77%, 52%)
+Cyan 800: hsl(184, 100%, 22%)
+Green 950: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Gray 100 (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders)
+- Weights: 700 */
