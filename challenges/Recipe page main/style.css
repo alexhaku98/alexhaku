@@ -1,0 +1,235 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--stone-100);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+hr {
+  border: 0.01rem solid var(--stone-150);
+}
+
+.main-card {
+  background-color: var(--white);
+  width: 46rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin: 7.71rem 0;
+  border-radius: 1.3rem;
+  height: max-content;
+}
+
+.main-card img {
+  width: 41rem;
+  align-self: center;
+  margin: 2.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.main-info {
+  padding: 0 2.5rem;
+}
+
+.main-info h1 {
+  font-weight: 400;
+  font-family: "Young Serif";
+  font-size: 2.5rem;
+  color: var(--stone-900);
+}
+
+.recipe-info {
+  font-family: "Outfit";
+  color: var(--stone-600);
+  font-weight: 400;
+  margin: 0.9rem 0;
+  line-height: 1.5rem;
+}
+
+.main-info h2 {
+  color: var(--brown-800);
+  font-weight: 400;
+  font-family: "Young Serif";
+  font-size: 1.75rem;
+}
+
+.main-info h3 {
+  color: var(--rose-800);
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.first-list {
+  background-color: var(--rose-50);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.first-list ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+  color: var(--stone-600);
+  font-family: "Outfit";
+  font-weight: 400;
+  margin-top: 0.7rem;
+}
+
+.first-list ul li {
+  line-height: 2rem;
+  padding-left: 1rem;
+}
+
+.second-list {
+  margin: 1.6rem 0 1.67rem 0;
+}
+
+.second-list ul {
+  margin: 0.9rem 0 0 1.5rem;
+  list-style: disc;
+  color: var(--stone-600);
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 2rem;
+}
+.second-list ul li {
+  padding-left: 1rem;
+}
+
+.third-list {
+  margin: 1.7rem 0 1.85rem 0;
+}
+
+.third-list ol {
+  margin: 1.15rem 0 0 1.5rem;
+  color: var(--stone-600);
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.third-list ol li {
+  margin-bottom: 0.5rem;
+}
+
+.third-list ol li::marker {
+  font-weight: bold;
+}
+
+.nutrition {
+  margin: 1.7rem 0 1.85rem 0;
+}
+
+.nutrition p {
+  margin-top: 1.25rem;
+  font-family: "Outfit";
+  color: var(--stone-600);
+  font-weight: 400;
+}
+
+.nutrition-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.calories,
+.carbs,
+.protein,
+.fat {
+  font-family: "Outfit";
+  color: var(--brown-800);
+  font-weight: 400;
+  padding: 0.85rem 1rem 0.85rem 1.7rem;
+}
+
+.calories,
+.carbs,
+.protein {
+  border-bottom: 0.1rem solid var(--stone-150);
+}
+
+.attribution {
+  font-size: 1rem;
+  color: var(--rose-800);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.attribution a {
+  color: var(--brown-800);
+}
+
+@media only screen and (max-width: 48.063rem) {
+  .main-card {
+    width: 100%;
+    border-radius: 0;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .main-card img {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+  }
+}
+
+/* ## Colors
+
+- White: hsl(0, 0%, 100%)
+
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+
+- Brown 800: hsl(14, 45%, 36%)
+
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700 */
